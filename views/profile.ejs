@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROFILE</title>
+</head>
+<body>
+    <nav>
+        <div>
+          <ul>
+            <li><a href="/users/sign-out">Sign Out</a></li>
+          </ul>
+        </div>
+    </nav>
+
+    <div>
+        <h1>User Profile</h1>
+        <div>
+          <div>
+            <div>
+              <h3>General Information</h3>
+            </div>
+            <div>
+              <table>
+                <tr>
+                  <th width="20%" style="text-align:right; font-size:20px;">Name</th>
+                  <td width="2%">:</td>
+                  <td style="font-size:20px;"><%= user.name %></td>
+                </tr>
+                <tr>
+                  <th width="20%" style="text-align:right; font-size:20px;">Email</th>
+                  <td width="2%">:</td>
+                  <td style="font-size:20px;"><%= user.email %></td>
+                </tr>
+                <tr>
+                  <th width="20%" style="text-align:right; font-size:20px;">Username</th>
+                  <td width="2%">:</td>
+                  <td style="font-size:20px;"><%= user.username %></td>
+                </tr>
+                
+              </table>
+            </div>
+          </div>
+        </div>
+</body>
+</html>

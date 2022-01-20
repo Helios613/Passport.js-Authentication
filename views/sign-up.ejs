@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN-UP</title>
+</head>
+<body>
+    <nav>
+        <div>
+          <div>
+            <a href="/">Home</a>
+          </div>
+          <ul>
+            <li><a href="/users/sign-up">Sign Up</a></li>
+            <li><a href="/users/sign-in">Sign In</a></li>
+            <li><a href="/about">About</a></li>
+          </ul>
+        </div>
+    </nav>
+
+    <header>
+        <h1>SIGN-UP</h1>
+        <form action="/users/addUser" method="POST" onsubmit="Verify" >
+            <div class="container">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" size="30" required class="name"><br><br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" size="50" required class="email"><br><br>
+            <label for="username">User Name</label>
+            <input type="text" id="username" name="username" size="30" required class="name"><br><br>
+            <label for="pwd">Password</label>
+            <input type="password" id="pwd" name="pwd" required class="pwd"><br><br>
+            <label for="cpwd">Confirm Password</label>
+            <input type="password" id="cpwd" name="cpwd" required class="pwd"><br><br>
+            <button type="submit" >Signup</button>
+            </div>
+        </form>
+    </header>
+</body>
+</html>
